@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:text="Số tiền:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTenKhoan" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="22dp"
+        android:text="Ngày tháng:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:text="Thu Chi:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNgayThang" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="20dp"
+        android:text="Tên khoản:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="88dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="23dp"
+        android:text="Thêm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSoTien" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="88dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="35dp"
+        android:text="Thoát"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSoTien" />
+
+    <EditText
+        android:id="@+id/edNgayThang"
+        android:layout_width="401dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edTenKhoan"
+        android:layout_width="401dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/edSoTien"
+        android:layout_width="401dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="299dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="142dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdoThu"
+            android:layout_width="154dp"
+            android:layout_height="match_parent"
+            android:text="Thu" />
+
+        <RadioButton
+            android:id="@+id/rdoChi"
+            android:layout_width="75dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Chi" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
